@@ -3,7 +3,6 @@ import './App.scss';
 import Showcase from "./Components/Showcase/Showcase";
 import Details from "./Components/Details/Details";
 import Footer from "./Components/Footer/Footer";
-import Documentation from "./Components/Documentation/Documentation";
 import Examples from "./Components/Examples/Examples";
 
 export default function App() {
@@ -11,9 +10,8 @@ export default function App() {
     <>
       <Header />
       <Showcase />
-      <Details />
       <Examples />
-      <Documentation />
+      <Details />
       <Footer />
     </>
   );
