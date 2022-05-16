@@ -1,0 +1,18 @@
+@import '../../App.scss';
+
+#highlights {
+  @include flex-spaced-out(column);
+  @include wide-container(5em);
+  color: #000;
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #highlights-row {
+    @include wide-container(1em);
+    @include flex-spaced-out(row);
+    margin: 5em 0;
+  }
+}

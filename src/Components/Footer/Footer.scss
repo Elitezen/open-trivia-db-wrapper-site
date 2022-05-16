@@ -1,20 +1,13 @@
 @import '../../App.scss';
 
 footer {
-  width: 100%;
-  height: fit-content;
-  color: rgba(255, 255, 255, 0.65);
-  background-color: $color-dark-gray;
-  padding: 0.5em 3em 0.5em 3em;
+  @include wide-container(2em);
+  @include flex-spaced-out(column);
+  background-color: darken($color-theme, 15);
+  color: #fff;
   text-align: center;
 
-  a {
-    color: inherit;
-    font-weight: bold;
-    font-size: 110%;
-  }
-
   p {
-    margin: 2em 0;
+    max-width: 50ch;
   }
 }

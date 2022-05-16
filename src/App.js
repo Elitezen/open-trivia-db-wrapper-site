@@ -1,17 +1,15 @@
-import Header from "./Components/Header/Header";
 import './App.scss';
-import Showcase from "./Components/Showcase/Showcase";
-import Details from "./Components/Details/Details";
-import Footer from "./Components/Footer/Footer";
-import Examples from "./Components/Examples/Examples";
+import Header from "./Components/Header/Header";
+import Showcase from './Components/Showcase/Showcase';
+import Highlights from './Components/Highlights/Highlights';
+import Footer from './Components/Footer/Footer';
 
 export default function App() {
   return (
     <>
       <Header />
       <Showcase />
-      <Examples />
-      <Details />
+      <Highlights />
       <Footer />
     </>
   );

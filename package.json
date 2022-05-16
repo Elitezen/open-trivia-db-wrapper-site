@@ -1,6 +1,6 @@
 {
   "name": "react-wesbtie",
-  "homepage": "https://Elitezen.github.io/easy-trivia-website",
+  "homepage": "https://github.com/Elitezen/open-trivia-db-wrapper-site",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",

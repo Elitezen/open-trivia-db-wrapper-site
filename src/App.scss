@@ -21,6 +21,12 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
+@mixin wide-container($padding:1.5em) {
+  width: 100%;
+  height: max-content;
+  padding: $padding;
+}
+
 @mixin flex-spaced-out($direction) {
   display: flex;
   flex-direction: $direction;

@@ -1,29 +1,29 @@
 import './Showcase.scss';
+import logo from '../../Assets/Images/opentdb_logo.png';
+
+const URL_OPENTDB = 'https://opentdb.com/';
 
 export default function Showcase() {
+  const redirect = (url = '') => {
+    alert(url);
+  };
+
   return (
-    <section id="showcase">
+    <div id="showcase">
       <img 
-        src="https://opentdb.com/images/logo.png" 
-        alt="Open Trivia DB" />
+        src={logo} 
+        alt="Open Trivia Database Logo"
+        draggable="false"
+        onClick={() => redirect(URL_OPENTDB)}/>
 
       <article>
-        EasyTrivia is a fast  
-        <span> JavaScript</span> library
-        which provides easy usage for the 
-        <a href="https://opentdb.com/" 
-          target="_blank" 
-          rel="noreferrer"> OpenTriviaDataBase API</a> with 
-          type definitions. Works with CommonJS, ESModules and 
-          TypeScript.
+        <p>
+          open-trivia-db is a small, simple and fast wrapper for 
+          <span onClick={() => redirect(URL_OPENTDB)}> Open Trivia Database </span>- A 
+          Free to use, user-contributed trivia question database. Built with TypeScript, 
+          works with VanillaJS.
+        </p>
       </article>
-
-      <h3>
-        Installation
-      </h3>
-      <pre><code>
-        npm i easy-trivia
-      </code></pre>
-    </section>
-  );
+    </div>
+  )
 }

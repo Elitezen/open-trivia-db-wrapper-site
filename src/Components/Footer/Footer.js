@@ -4,11 +4,10 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        Website by Alejandro Muratalla-Marin. Created with React and SCSS. <br />
-      </p>
-      <p>
-        <a href="#">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/Elitezen">GitHub</a>
+        Advertised software and website by Alejandro Muratalla-Marin. 
+        Open Trivia DB and it's respective trademarks belong to <span>PixelTail Games</span>.
+        Open-source software open-trivia-db-wrapper is licensed under the <span>MIT License</span>.
       </p>
     </footer>
-  );
+  )
 }

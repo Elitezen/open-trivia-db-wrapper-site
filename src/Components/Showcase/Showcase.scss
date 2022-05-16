@@ -1,73 +1,37 @@
-@use 'sass:map';
 @import '../../App.scss';
 
 #showcase {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: min-content;
-  background-color: $color-theme;
-  padding: 5em 1em;
-  background: repeating-linear-gradient(180deg, $color-theme 0%, rgb(28, 47, 151) 100%);
+  @include flex-spaced-out(column);
+  @include wide-container();
 
+  background: rgb(29,26,79);
+  background: linear-gradient(180deg, rgba(29,26,79,1) 32%, rgba(45,60,139,1) 95%);
   img {
-    aspect-ratio: 20 / 9;
-    width: 80%;
-    max-width: 800px;
-    margin: 1.5em 0;
+    width: 70%;
+    margin: 3em 0;
+    max-width: 1000px;
+    min-width: 350px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   article {
-    max-width: 60ch;
-    padding: 2em 0;
-    font-size: 1.8em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
+    max-width: 50ch;
     color: #fff;
+    font-size: 1.75em;
+    margin: 1em 0;
     text-align: center;
-  
-    span {
-      color: #ffff00;
-    }
-    
-    a {
-      color: hsl(195, 46%, 54%);
-      letter-spacing: 0.5px;
-      font-weight: bold;
-    }  
-  }
-
-  h3 {
-    color: #fff;
-    font-size: 3em;
-    font-weight: lighter;
+    line-height: 1.2em;
     letter-spacing: 0.5px;
   }
 
-  pre code {
-    display: block;
-    background-color: rgb(228, 203, 203);
-    white-space: pre;
-    font-size: 1.75rem;
-    margin-top: 1em;
-    border: none;
-    border-radius: 10px;
-    padding: 0.25em 1.5em;
-  }
-
-  @media screen and (max-width: map.get($grid-breakpoints, "md")) {
-    background: repeating-linear-gradient(180deg, lighten($color-theme, 15%) 0%, rgb(11, 10, 31) 140%);
-  }
-
-  @media screen and (max-width: calc(map.get($grid-breakpoints, "md") + 80px)) {
-    & {
-      padding: 5em 1em;
-    }
-
-    h2 {
-      max-width: 60ch;
+  span {
+    text-decoration: underline;
+    color: #ffff00;
+    &:hover {
+      cursor: pointer;
     }
   }
 }
